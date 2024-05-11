@@ -1,0 +1,29 @@
+.main{
+    background-color: whitesmoke;
+    padding: 5px;
+    z-index: 1;
+}
+.corecontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.innerdiv{
+    width: 30%;
+    height: fit-content;
+    margin:2px;
+    text-align: justify;
+    padding: 10px;
+    padding-top: -10px;
+}
+@media screen and (max-width: 450px) {
+    .corecontainer {
+        flex-direction: column;
+    }
+    .innerdiv {
+        width: 90%;
+        height: max-content;
+    }
+}

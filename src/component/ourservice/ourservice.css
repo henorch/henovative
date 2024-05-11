@@ -1,0 +1,40 @@
+.mainservice{
+    background-color: blue;
+    padding: 5px;
+    z-index: 1;
+}
+
+.servicecontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.innerservice {
+    width: 30%;
+    height: 300px;
+    margin:0 auto;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    padding-top: -10px;
+}
+
+@media screen and (max-width: 450px) {
+    .servicecontainer {
+        flex-direction: column;
+    }
+    .innerservice {
+        width: 90%;
+        height: 300px;
+        border-radius: 5px;
+        
+    }
+}

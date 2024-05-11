@@ -36,6 +36,25 @@
 
 }
 
+.community {
+    width: 250px;
+    opacity: 0.9;
+    padding:20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+.community > h4 {
+    text-decoration: underline;
+    margin-top: -10px;
+}
+
+.community > .com_icon {
+    width:40px;
+    height: 40px;
+    margin:2px
+}
+
 @media screen and (max-width: 450px) {
     .subcontainer{
         width:100%

@@ -14,37 +14,20 @@
 .navbar {
     height: 10vh;
     position: fixed;
-    padding-right: 20pxm  ;
+    padding-right: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     top:0;
     left:0;
     background-color: #d0de1a;
-    width: 96%;
+    width: 94%;
 }
 
 .navbar > h4 {
     display: none;
 }
-.community {
-    width: 250px;
-    opacity: 0.9;
-    padding:20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
 
-}
-.community > h4 {
-    text-decoration: underline;
-    margin-top: -10px;
-}
-
-.community > .com_icon {
-    width:40px;
-    height: 40px;
-    margin:2px
-}
 .thumbholder{
     height: 120px;
     width: 30%;
@@ -73,7 +56,6 @@
      justify-content:space-evenly;
      align-items: center;
      width:90%;
- 
  }
  .menu-item > a {
      text-decoration: none;
@@ -90,6 +72,7 @@
      height: 90vh;
      background-size:contain;
      width:100%;
+     margin-top: 80px;
      border: 1px solid black;
      background-repeat: no-repeat;
  }

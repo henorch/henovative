@@ -10,6 +10,7 @@ import imgbg from '../../graphic.png'
 import Slide from '../../component/slide/slide';
 import Navbar from '../../component/navbar/navbar';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const navbarItem = {
     Logo: Logo,
@@ -77,20 +78,17 @@ const navbarItem = {
                     <p>however please note thatt <b>This site is still under construction</b></p></div> }
         <div className="container">
        {display &&   <div className="mobileMenu">
-                <a href='home'>Home</a>
-                <a href='home'>Our Service</a>
+                 <Link to='/'>Home</Link>
+                 <Link to='/about'>Our Service</Link>
                 <a href='home'>About us</a>
                 <a href='home'>Mission</a>
                
         </div>}
-            <div className='navbar'>
-               
-                    
-               
+            <div className='navbar'>             
             <img className='logostyle' src={Logo} alt='loading_logo'/>
             <div className='menu-item'>
-                <a href='home'>Home</a>
-                <a href='home'>Our Service</a>
+                <Link to='/'>Home</Link>
+                <Link to='/about'>Our Service</Link>
                 <a href='home'>About us</a>
                 <a href='home'>Mission</a>
             </div>
@@ -101,15 +99,11 @@ const navbarItem = {
                 backgroundColor:'blue'
             }} onClick={toogleMenu}>MENU</h4>
             </div>
-       
-       
-       
         </div>
         <Slide/>
         <CoreValue/>
         <OurServices/>
         <Customer/>
-        <Footer/>
         </div>
     )
 }
